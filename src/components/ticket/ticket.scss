@@ -1,0 +1,86 @@
+.ticket {
+  margin-bottom: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+
+  &:last-of-type {
+    margin-bottom: 10rem;
+  }
+
+  .left-side {
+    flex: 1;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1rem;
+    border-right: solid 1px #bababa;
+  }
+
+  .right-side {
+    padding-left: 1rem;
+    flex: 3;
+    display: flex;
+    gap: 1rem;
+
+    .departure-info {
+      flex: 1;
+      .departure-info__time {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      .departure-info__location {
+        font-weight: 500;
+        width: max-content;
+        font-size: 0.8rem;
+      }
+
+      .departure-info__date {
+        font-weight: 500;
+        width: max-content;
+        font-size: 0.8rem;
+        color: #a8a8a8;
+      }
+    }
+
+    .stops {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      flex: 1;
+      font-size: 0.8rem;
+      color: #a8a8a8;
+
+      &::after {
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        content: "✈";
+        display: flex;
+        width: 90px;
+        height: 1px;
+        background-color: #bdbdbd;
+      }
+    }
+
+    .arrival-info {
+      @extend .departure-info;
+
+      .arrival-info__time {
+        @extend .departure-info__time;
+      }
+
+      .arrival-info__location {
+        @extend .departure-info__location;
+      }
+
+      .arrival-info__date {
+        @extend .departure-info__date;
+      }
+    }
+  }
+}

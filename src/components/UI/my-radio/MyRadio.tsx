@@ -14,7 +14,7 @@ const MyRadio = (props: Props) => {
         value={1}
       />
       <label htmlFor="first" className="radio-label">
-        USD
+        RUB
       </label>
       <input
         className="input"
@@ -24,7 +24,7 @@ const MyRadio = (props: Props) => {
         value={2}
       />
       <label htmlFor="second" className="radio-label">
-        EUR
+        USD
       </label>
       <input
         className="input"
@@ -34,7 +34,7 @@ const MyRadio = (props: Props) => {
         value={3}
       />
       <label htmlFor="third" className="radio-label">
-        GBP
+        EUR
       </label>
     </form>
   );

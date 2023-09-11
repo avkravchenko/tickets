@@ -1,0 +1,31 @@
+.check-form {
+  display: flex;
+  flex-direction: column;
+
+  .check-form__row {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    label {
+      cursor: pointer;
+    }
+
+    input {
+      cursor: pointer;
+    }
+
+    &:hover {
+      background-color: #f1fcff;
+    }
+
+    &:hover::after {
+      position: absolute;
+      content: "только";
+      right: 5px;
+      color: #2296f3;
+      font-weight: 500;
+    }
+  }
+}

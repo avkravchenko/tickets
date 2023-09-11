@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../layout/Header.tsx";
-import Filters from "../components/filters/Filters.tsx";
+import Header from "../layout/header/Header";
+import Main from "../layout/main/Main";
 
 type Props = {};
 
@@ -8,7 +8,7 @@ const HomePage = (props: Props) => {
   return (
     <div>
       <Header />
-      <Filters />
+      <Main />
     </div>
   );
 };

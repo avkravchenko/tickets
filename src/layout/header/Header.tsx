@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as Logo } from "../assets/plane.svg";
 import "./header.scss";
+import { ReactComponent as Logo } from "../../assets/plane.svg";
 
 type Props = {};
 
