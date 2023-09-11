@@ -1,0 +1,35 @@
+.radio-group {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+
+  .radio-label {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #2296f3;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #f3fcff;
+      border: 1px solid #2296f3;
+    }
+
+    &:last-of-type:hover {
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+    &:first-of-type {
+      border-radius: 0.5rem 0 0 0.5rem;
+    }
+  }
+}
+
+.input {
+  display: none;
+
+  &:checked + .radio-label {
+    background-color: #2296f3;
+    color: #fff;
+    border: 1px solid #2296f3;
+  }
+}
