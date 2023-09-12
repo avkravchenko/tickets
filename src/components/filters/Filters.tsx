@@ -3,9 +3,7 @@ import "./filters.scss";
 import MyRadio from "../UI/my-radio/MyRadio";
 import MyCheck from "../UI/my-check/MyCheck";
 
-type Props = {};
-
-const Filters = (props: Props) => {
+const Filters = () => {
   return (
     <div className="filters">
       <h3>Валюта</h3>
